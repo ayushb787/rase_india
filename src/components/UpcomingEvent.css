@@ -1,0 +1,23 @@
+.upcoming-event {
+  position: fixed;
+  top: 100;
+  bottom: 0;
+  width: 120%;
+  background-color: #2B427E;
+  color: #fff;
+  overflow: hidden; 
+  z-index: 9999;
+}
+
+.upcoming-event p {
+  animation: slideHeader 10s linear infinite;
+}
+
+@keyframes slideHeader {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

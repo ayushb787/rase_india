@@ -1,0 +1,19 @@
+.carousel-image{
+    width: 100%;
+}
+
+
+.carousel-container{
+    width: 100%;
+}
+
+/* Carousel control icons */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    font-size: 316px; /* Adjust the font size to increase or decrease the icon size */
+  }
+  
+  /* Hide the default bootstrap styling for the arrows */
+  .carousel-control-prev, .carousel-control-next {
+    background-image: none;
+  }
+  
