@@ -4,7 +4,7 @@ import '../components/MessageBox.css';
 import { Outlet, Link } from "react-router-dom";
 import { FaBrain } from 'react-icons/fa';
 import image12 from '../assets/doctor_images/12.jpg';
-
+import spine_img from '../assets/spine_logo_1.png';
 function CEOMessage() {
 
   return (
@@ -17,7 +17,7 @@ function CEOMessage() {
             <span>of the Radical Academy of Spine Endoscopy</span>
         </div>
         <span class="msg-icon">
-            <FaBrain className='msg-icon'/>
+            <img src={spine_img} alt='spine' className='msg-icon'/>
         </span>
         
         <div className='message-body'>

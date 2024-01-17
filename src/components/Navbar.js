@@ -34,11 +34,11 @@ function Navbar() {
             </ul>
           </li>
           <li className="navbar-item">
-            <a href="/joinRace">Join RASE</a>
-            <ul className="sub-menu">
+            <a href="/join-rase">Join RASE</a>
+            {/* <ul className="sub-menu">
               <li><a href="/joinRace/india">India</a></li>
               <li><a href="/joinRace/america">America</a></li>
-            </ul>
+            </ul> */}
           </li>
           <li className="navbar-item">
             <a href="/memberSection">Member Section</a>
@@ -72,11 +72,11 @@ function Navbar() {
             <a href="/raceEducation">RASE&nbsp;Education</a>
           </li>
           <li className="navbar-item">
-            <a href="/joinRace">Join&nbsp;RASE</a>
-            <ul className="sub-menu">
+            <a href="/join-rase">Join&nbsp;RASE</a>
+            {/* <ul className="sub-menu">
               <li><a href="/joinRace/india">India</a></li>
               <li><a href="/joinRace/america">America</a></li>
-            </ul>
+            </ul> */}
           </li>
           <li className="navbar-item">
             <a href="/memberSection">Member&nbsp;Section</a>

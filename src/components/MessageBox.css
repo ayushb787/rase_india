@@ -77,9 +77,9 @@
 
 
 .msg-icon{
-        font-size: 36px; 
-        color: #FBAD10; 
-
+    height: 50px;
+    width: 50px;
+    margin: 10px;
 }
 
 @media (max-width: 768px) {

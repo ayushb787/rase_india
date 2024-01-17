@@ -4,7 +4,7 @@ import '../components/MessageBox.css';
 import { Outlet, Link } from "react-router-dom";
 import { FaBrain } from 'react-icons/fa';
 import image1 from '../assets/doctor_images/1.png';
-
+import spine_img from '../assets/spine_logo_1.png';
 function ChairmanMessage() {
 
   return (
@@ -17,22 +17,21 @@ function ChairmanMessage() {
             <span>of the Radical Academy of Spine Endoscopy</span>
         </div>
         <span class="msg-icon">
-            <FaBrain className='msg-icon'/>
+            <img src={spine_img} alt='spine' className='msg-icon'/>
         </span>
-        
         <div className='message-body'>
             <p>
-                <strong>Dear Friends</strong>
+                <strong>Dear Members and Friends,</strong>
             </p>
-            <p>I trust this message finds you all in good health and high spirits. It is with immense pleasure and a profound sense of responsibility that I address you today as the Chairman of the RASE India Association.</p>
+            <p>As the Chairman of RASE India Association and a practicing physician specializing in endoscopy surgery, it is a privilege to welcome you to our digital platform.</p>
 
-            <p>As we all know, RASE India has been at the forefront of the field of endoscopy surgery and has consistently strived to enhance the quality of healthcare by providing specialized training to our dedicated medical professionals. Our mission to elevate the standards of patient care through education, innovation, and collaboration has always been our driving force.</p>
+            <p>RASE India has been a trailblazer in the field of endoscopy, consistently working towards enhancing healthcare standards by providing specialized training to our dedicated medical professionals. Our commitment to elevating patient care through education, innovation, and collaboration has been unwavering, and it is a testament to the dedication of our esteemed members and faculty.</p>
 
-            <p>In our pursuit of excellence, we have successfully organized numerous training programs and workshops, equipping doctors with the latest advancements in endoscopy procedures. We firmly believe that continuous learning and skill development are the cornerstones of medical progress.</p>
+            <p>I extend my sincere appreciation to the entire RASE India team for their tireless efforts and our members for their commitment to our shared cause. It is through your collective passion and expertise that RASE India has become a leading institution in the realm of endoscopy surgery.</p>
 
-            <p>I would like to take this opportunity to express my heartfelt gratitude to the entire RASE India team, our esteemed faculty, and our members who have shown unwavering commitment and dedication to our cause. It is your collective effort that has made RASE India a leading institution in the field of endoscopy surgery.</p>
+            <p>Looking ahead, our focus remains on fostering innovation, expanding educational initiatives, and building international collaborations. Together, we can achieve significant milestones and contribute meaningfully to the healthcare landscape.</p>
 
-            <p>Looking ahead, our focus remains on fostering innovation, expanding our educational outreach, and fostering international collaborations. Together, we can achieve remarkable milestones and contribute significantly to the healthcare landscape.</p>
+            <p>I encourage all our members to actively participate in our upcoming programs, share their valuable insights, and collaborate towards our common goals. Your active involvement is vital in shaping the future of endoscopy surgery in our nation.</p>
 
             <p>I encourage all our members to actively participate in our upcoming programs, share their insights, and work collaboratively towards our shared goals. Your active engagement is invaluable in shaping the future of endoscopy surgery in India.</p>
 

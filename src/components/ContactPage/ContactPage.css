@@ -1,0 +1,208 @@
+.outer-container-contact-page{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+}
+
+.container-background-image{
+  width: 100%;
+  height: 50%;
+  background-image: url('../../assets/race_poster.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.contact-page-info{
+  background-color: #163B65;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid whitesmoke;
+  width: 40%;
+  border-radius: 7px;
+}
+
+.container-contact-page{
+  border-radius: 7px;
+    padding: 20px;
+    background: #11639D;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid whitesmoke;
+    width: 60%;
+    /* align-self: center; */
+}
+
+
+.contact-page-header-one, .contact-page-header-name-two{
+  align-self: center;
+}
+.contact-page-header-one-part-one{
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 48px;
+    margin: 10px 0;
+}
+
+.contact-page-header-two-part-one{
+  color: white;
+}
+
+
+.msg-icon{
+  align-self: center;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.contact-page-icons{
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon{
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+}
+
+.icon:hover{
+    color: #FBAD10;
+    cursor: pointer;
+}
+
+.contact-page-inner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 100%; 
+}
+
+form#contact-page-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: white;
+  }
+  
+  input[type="text"],
+  input[type="email"], input[type="phone"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #163B65;
+    color: white;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #163B65; 
+    color: white;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  @media (max-width: 1024px) {
+    .contact-page-info{
+      width: 100%;
+    }
+    .container-background-image{
+      width: 100%;
+      height: 150px;
+      margin: 20px;
+      background-image: url('../../assets/race_india_logo.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+      background-size:contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+    }
+  }
+  @media (max-width: 768px) {
+   
+    .outer-container-contact-page{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+    .container-background-image{
+      display: flex;
+      width: 100%;
+    }
+    .container-contact-page{
+      width: 100%;
+      padding: 20px;
+      background: #11639D;
+      display: flex;
+      flex-direction: column;
+      border: 2px solid whitesmoke;
+      align-self: center;
+  }
+  }

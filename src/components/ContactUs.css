@@ -14,23 +14,23 @@
 }
 
 .contact-header-two-part-one{
-    color: white;
+  color: white;
 }
 
 
 .msg-icon{
-        font-size: 36px; /* Adjust the size as needed */
-        color: #FBAD10; /* Adjust the color as needed */
-
+  height: 50px;
+  width: 50px;
+  margin: 10px;
 }
 
 .contact-icons{
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .icon{
