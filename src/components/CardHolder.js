@@ -13,8 +13,7 @@ import image9 from '../assets/doctor_images/9.png';
 import image10 from '../assets/doctor_images/10.png';
 import image11 from '../assets/doctor_images/11.png';
 import { Card } from 'react-bootstrap';
-import { FaBrain } from 'react-icons/fa';
-
+import spine_img from '../assets/spine_logo_1.png';
 const CardHolder = () => {
     return (
        <div className="container-carousel-2 shadow-lg-3 bg-white rounded">
@@ -26,7 +25,7 @@ const CardHolder = () => {
                 <span>The Office Bearers of RASE</span>
             </div>
             <span class="msg-icon">
-                <FaBrain className='msg-icon'/>
+                <img src={spine_img} alt='spine' className='msg-icon'/>
             </span>
             <div className='carousel-inner-container'>
             <Carousel  cols={4} rows={1} gap={5} autoplay={2500} step={1} loop>

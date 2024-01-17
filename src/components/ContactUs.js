@@ -5,7 +5,7 @@ import { Outlet, Link } from "react-router-dom";
 import { FaBrain, FaInstagram, FaFacebook, FaWhatsapp, FaMailBulk, FaTwitter, FaSearchLocation } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import image12 from '../assets/doctor_images/12.jpg';
-
+import spine_img from '../assets/spine_logo_1_white.png';
 function ContactUs() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -27,6 +27,11 @@ function ContactUs() {
       console.log('Email:', email);
       console.log("Phone:", phone)
       console.log('Message:', message);
+        const url =
+          'https://wa.me/919405399911?text=' +
+          encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`);
+        window.open(url, '_blank').focus();
+      
     }
   return (
     <footer className='container-contact-us'>   
@@ -37,7 +42,7 @@ function ContactUs() {
             <span className='contact-header-two-part-one'>Radical Academy of Spine Endoscopy, India</span>
         </div>
         <span class="msg-icon">
-            <FaBrain className='msg-icon'/>
+            <img src={spine_img} alt='spine' className='msg-icon'/>
         </span>
         <div className='contact-inner-container'>
             
@@ -68,7 +73,7 @@ function ContactUs() {
                         type="phone"
                         className="form-control"
                         aria-describedby="emailHelp"
-                        value={email}
+                        value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                     />
                     </div>
@@ -89,7 +94,7 @@ function ContactUs() {
                 <a target="_blank" rel="noopener" href='https://www.instagram.com/rase4scopy/'><span><FaInstagram className='icon' /></span></a>
                 <a target="_blank" rel="noopener" href='https://wa.link/22iirv'><span><FaWhatsapp className='icon' /></span></a>
                 <a target="_top" href="mailto:rase4scopy@gmail.com" ><span><FaMailBulk className='icon' /></span></a>
-                <a target="_blank" rel="noopener" href="https://twitter.com//raseindia"><span><FaTwitter className='icon' /></span></a>
+                <a target="_blank" rel="noopener" href="https://twitter.com/raseindia"><span><FaTwitter className='icon' /></span></a>
             </div>
         </div>
     </footer>

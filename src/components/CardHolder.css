@@ -1,8 +1,8 @@
 
 .msg-icon{
-    font-size: 36px; /* Adjust the size as needed */
-    color: #FBAD10; /* Adjust the color as needed */
-
+    height: 50px;
+    width: 50px;
+    margin: 10px;
 }
 
 .header-one-part-one{
