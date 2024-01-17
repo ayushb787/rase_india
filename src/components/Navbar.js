@@ -47,7 +47,7 @@ function Navbar() {
             <a href="/downloads">Downloads</a>
           </li>
           <li className="navbar-item">
-            <a href="/conference">Conferences/Events</a>
+            <a href="/upcoming-events">Conferences/Events</a>
           </li>
           <li className="navbar-item">
             <a href="/gallery">Gallery</a>
@@ -85,7 +85,7 @@ function Navbar() {
             <a href="/downloads">Downloads</a>
           </li>
           <li className="navbar-item">
-            <a href="/conference">Conferences/Events</a>
+            <a href="/upcoming-events">Conferences/Events</a>
           </li>
           <li className="navbar-item">
             <a href="/gallery">Gallery</a>

@@ -5,6 +5,7 @@ import './App.css';
 import GalleryPage from "./components/Gallery/GalleryPage.js";
 import ContactUsPage from "./components/ContactPage/ContactPage.js";
 import JoinRaseForms from "./components/JoinRase/JoinRaceForms.js";
+import UpcomingEvents from "./components/UpcomingEvents/UpcomingEvents.js";
 function App() {
   return (
     <Router>
@@ -13,6 +14,7 @@ function App() {
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/contact" element={<ContactUsPage />} />
         <Route path="/join-rase" element={<JoinRaseForms />} />
+        <Route path='/upcoming-events' element={<UpcomingEvents/>}/>
       </Routes>
     </Router>
     // <BrowserRouter>
