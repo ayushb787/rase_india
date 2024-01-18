@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt, faMapMarkerAlt, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt, faMapMarkerAlt, faExternalLinkAlt,faUserMd ,faInfoCircle  } from '@fortawesome/free-solid-svg-icons';
 import './UpcomingEvents.css';
 import raseposter from '../../assets/rase_poster_1.jpg';
 
@@ -31,13 +31,15 @@ const UpcomingEvents = () => {
   }, []);
 
   const handleRegistration = (registrationLink) => {
-    window.location.href = registrationLink;
+    window.open(registrationLink, '_blank');
   };
+  
+  
 
   const getCenterSlidePercentage = () => {
     const screenWidth = window.innerWidth;
     if (screenWidth >= 1200) {
-      return 30; // Large screens
+      return 50; // Large screens
     } else if (screenWidth >= 768) {
       return 75; // Medium screens
     } else {
@@ -68,14 +70,28 @@ const UpcomingEvents = () => {
             >
               {events.map((event, index) => (
                 <div key={index} className="carousel-card">
-                  <h2>{event.eventName}</h2>
-                  <p>
+                  <div className="event-name">
+                    <h4>{event.eventName}</h4>
+                  </div>
+                  <p className='event-description-paragraph'>
+                    <div className="event-location">
+                      <FontAwesomeIcon icon={faInfoCircle} /> {event.eventDescription} <br /> 
+                    </div>
+                    <FontAwesomeIcon icon={faUserMd } /> {event.doctorName} <br />
                     <FontAwesomeIcon icon={faCalendarAlt} /> {event.date} <br />
-                    <FontAwesomeIcon icon={faMapMarkerAlt} /> {event.venue}, {event.location} <br />
+                    <div className="event-location">
+                      <FontAwesomeIcon icon={faMapMarkerAlt} /> {event.venue}, {event.location}
+                    </div>
+                    
                   </p>
-                  <button onClick={() => handleRegistration(event.registerLink)}>
+                  <div className='event-buttons'>
+                  <button  onClick={() => handleRegistration(event.posterLink)}>
+                    <FontAwesomeIcon icon={faExternalLinkAlt} /> Details
+                  </button>
+                  <button  onClick={() => handleRegistration(event.registerLink)}>
                     <FontAwesomeIcon icon={faExternalLinkAlt} /> Register
                   </button>
+                  </div>
                 </div>
               ))}
             </Carousel>
